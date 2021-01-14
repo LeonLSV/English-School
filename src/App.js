@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Router } from "@reach/router";
+import { Row, Col } from "antd";
+import { Home } from "./pages/Home";
+import { ClassList } from "./components/ClassList";
+import { Course0 } from "./pages/Course0";
+import { Course1 } from "./pages/Course1";
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Row justify="center">
+        <Col
+          span={24}
+          style={{
+            height: "100px",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            background: "#e6e6e6",
+          }}>
+          <Home />
+        </Col>
+      </Row>
+      <Row>
+        <Col
+          span={5}
+          style={{
+            height: "100vh",
+            background: "#e6e6e6",
+            display: "flex",
+            justifyContent: "center",
+          }}>
+          <ClassList />
+        </Col>
+        <Router>
+          <Course0 exact path="/estrategias-para-aprender-ingles-online" />
+          <Course1 exact path="/ingles-para-principiantes" />
+        </Router>
+      </Row>
+    </>
   );
-}
-
-export default App;
+};
