@@ -6,6 +6,7 @@ import MenuClass from "./components/ClassList";
 import { EstrategiasParaAprenderIngles } from "./pages/EstrategiasParaAprenderIngles";
 import { InglesParaPrincipiantes } from "./pages/InglesParaPrincipiantes";
 import { TheAlphabet } from "./pages/TheAlphabet";
+import { HowDoYouSpellThat } from "./pages/HowDoYouSpellThat";
 
 export const App = () => {
   return (
@@ -39,6 +40,7 @@ export const App = () => {
                 path="/ingles-para-principiantes"
               />
               <TheAlphabet exact path="the-alphabet" />
+              <HowDoYouSpellThat exact path="/how-do-you-spell-that" />
             </Router>
           </Col>
         </Row>
