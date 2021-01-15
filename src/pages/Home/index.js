@@ -4,7 +4,7 @@ import { Row, Col } from "antd";
 export const Home = () => {
   return (
     <>
-      <Row justify="center">
+      <Row justify="center" align="middle">
         <Col
           span={24}
           style={{

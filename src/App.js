@@ -2,10 +2,10 @@ import React from "react";
 import { Router } from "@reach/router";
 import { Row, Col } from "antd";
 import { Home } from "./pages/Home";
-// import { ClassList } from "./components/ClassList";
 import MenuClass from "./components/ClassList";
-import { Course0 } from "./pages/Course0";
-import { Course1 } from "./pages/Course1";
+import { EstrategiasParaAprenderIngles } from "./pages/EstrategiasParaAprenderIngles";
+import { InglesParaPrincipiantes } from "./pages/InglesParaPrincipiantes";
+import { TheAlphabet } from "./pages/TheAlphabet";
 
 export const App = () => {
   return (
@@ -23,14 +23,25 @@ export const App = () => {
           <Home />
         </Col>
       </Row>
-      <Row>
-        <Col>
+      <Row justify="center" align="middle">
+        <Col span={24}>
           <MenuClass />
         </Col>
-        <Router>
-          <Course0 exact path="/estrategias-para-aprender-ingles-online" />
-          <Course1 exact path="/ingles-para-principiantes" />
-        </Router>
+        <Row justify="center" align="middle">
+          <Col span={24} style={{ display: "flex", justifyContent: "center" }}>
+            <Router>
+              <EstrategiasParaAprenderIngles
+                exact
+                path="/estrategias-para-aprender-ingles-online"
+              />
+              <InglesParaPrincipiantes
+                exact
+                path="/ingles-para-principiantes"
+              />
+              <TheAlphabet exact path="the-alphabet" />
+            </Router>
+          </Col>
+        </Row>
       </Row>
     </>
   );
