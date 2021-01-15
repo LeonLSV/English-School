@@ -2,7 +2,8 @@ import React from "react";
 import { Router } from "@reach/router";
 import { Row, Col } from "antd";
 import { Home } from "./pages/Home";
-import { ClassList } from "./components/ClassList";
+// import { ClassList } from "./components/ClassList";
+import MenuClass from "./components/ClassList";
 import { Course0 } from "./pages/Course0";
 import { Course1 } from "./pages/Course1";
 
@@ -23,15 +24,8 @@ export const App = () => {
         </Col>
       </Row>
       <Row>
-        <Col
-          span={5}
-          style={{
-            height: "100vh",
-            background: "#e6e6e6",
-            display: "flex",
-            justifyContent: "center",
-          }}>
-          <ClassList />
+        <Col>
+          <MenuClass />
         </Col>
         <Router>
           <Course0 exact path="/estrategias-para-aprender-ingles-online" />

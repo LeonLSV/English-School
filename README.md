@@ -2,4 +2,4 @@
 
 Hi!! Here i will be writing my english notes
 
-## My notes
+## Made with React + Styled Components + Ant Design
