@@ -22,11 +22,7 @@ import { Link } from "./styled";
 // };
 
 import { Menu } from "antd";
-import {
-  MailOutlined,
-  AppstoreOutlined,
-  SettingOutlined,
-} from "@ant-design/icons";
+import { MailOutlined, SettingOutlined } from "@ant-design/icons";
 
 const { SubMenu } = Menu;
 
