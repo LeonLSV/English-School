@@ -22,7 +22,7 @@ import { Link } from "./styled";
 // };
 
 import { Menu } from "antd";
-import { MailOutlined, SettingOutlined } from "@ant-design/icons";
+import { BookOutlined } from "@ant-design/icons";
 
 const { SubMenu } = Menu;
 
@@ -43,21 +43,26 @@ class MenuClass extends React.Component {
         onClick={this.handleClick}
         selectedKeys={[current]}
         mode="horizontal">
-        <Menu.Item key="mail" icon={<MailOutlined />}>
-          Home
+        <Menu.Item key="mail">
+          <Link to="/">Home</Link>
         </Menu.Item>
 
-        <SubMenu key="SubMenu" icon={<SettingOutlined />} title="Courses">
-          {/* <Menu.ItemGroup title="Estrategias"> */}
-          <Link to="/estrategias-para-aprender-ingles-online">
-            <Menu.Item key="setting:1">
-              Estrategias para aprender inglés online
-            </Menu.Item>
-          </Link>
-          <Link to="/ingles-para-principiantes">
-            <Menu.Item key="setting:2">Inglés para principiantes</Menu.Item>
-          </Link>
-          {/* </Menu.ItemGroup> */}
+        <SubMenu
+          style={{ margin: "0 10px" }}
+          key="SubMenu"
+          icon={<BookOutlined />}
+          title="Courses">
+          <Menu.Item key="setting:1">
+            <Link to="/estrategias-para-aprender-ingles-online">
+              Estrategias para aprender inglés online{" "}
+            </Link>
+          </Menu.Item>
+
+          <Menu.Item key="setting:2">
+            <Link to="/ingles-para-principiantes">
+              Inglés para principiantes
+            </Link>
+          </Menu.Item>
         </SubMenu>
         <Menu.Item key="alipay">
           <a

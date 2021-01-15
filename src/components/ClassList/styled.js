@@ -10,9 +10,10 @@ export const Link = styled(LinkRouter)`
   outline: none;
   cursor: pointer;
   line-height: 35px;
+  margin: 10px;
 
   &[aria-current] {
-    color: green;
+    color: #1670c2;
     ${fadeIn({ time: "1s" })};
   }
 `;
