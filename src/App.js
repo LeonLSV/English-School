@@ -5,8 +5,10 @@ import { Home } from "./pages/Home";
 import MenuClass from "./components/ClassList";
 import { EstrategiasParaAprenderIngles } from "./pages/EstrategiasParaAprenderIngles";
 import { InglesParaPrincipiantes } from "./pages/InglesParaPrincipiantes";
-import { TheAlphabet } from "./pages/TheAlphabet";
-import { HowDoYouSpellThat } from "./pages/HowDoYouSpellThat";
+import { TheAlphabet } from "./components/TheAlphabet";
+import { HowDoYouSpellThat } from "./components/HowDoYouSpellThat";
+import Motivacion from "./components/Motivacion";
+import { Intro } from "./components/Intro";
 
 export const App = () => {
   return (
@@ -19,7 +21,7 @@ export const App = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            background: "#e6e6e6",
+            background: "linear-gradient(70deg, #1890ff, #e6f3fe)",
           }}>
           <Home />
         </Col>
@@ -31,6 +33,7 @@ export const App = () => {
         <Row justify="center" align="middle">
           <Col span={24} style={{ display: "flex", justifyContent: "center" }}>
             <Router>
+              <Intro exact path="/" />
               <EstrategiasParaAprenderIngles
                 exact
                 path="/estrategias-para-aprender-ingles-online"
@@ -41,6 +44,7 @@ export const App = () => {
               />
               <TheAlphabet exact path="the-alphabet" />
               <HowDoYouSpellThat exact path="/how-do-you-spell-that" />
+              <Motivacion exact path="/motivation" />
             </Router>
           </Col>
         </Row>

@@ -1,30 +1,26 @@
 import React from "react";
-import { Row, Card } from "antd";
+import { Row } from "antd";
+import classone from "../../images/classone.png";
+import { Cards } from "../../components/Cards";
+import { LinkClass } from "../../components/Cards/styled";
 
-const { Meta } = Card;
 const tarjeta = {
   width: 240,
-  margin: "20px",
+  margin: "50px",
 };
 
 export const EstrategiasParaAprenderIngles = () => {
   return (
     <>
       <Row justify="center">
-        <Card
-          hoverable
-          style={tarjeta}
-          cover={
-            <img
-              alt="ClassOne"
-              src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
-            />
-          }>
-          <Meta
-            title="Aún no completo esta sección"
-            description="Proximamente"
+        <LinkClass to="/motivation">
+          <Cards
+            style={tarjeta}
+            title="Motivación"
+            description="Encuentra una motivación para aprender inglés."
+            image={classone}
           />
-        </Card>
+        </LinkClass>
       </Row>
     </>
   );

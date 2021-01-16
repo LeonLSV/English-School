@@ -8,11 +8,10 @@ export const Home = () => {
         <Col
           span={24}
           style={{
-            height: "100px",
+            height: "140px",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            background: "#e6e6e6",
           }}>
           <h1>Welcome to my English School</h1>
         </Col>
