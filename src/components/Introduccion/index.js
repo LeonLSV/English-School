@@ -9,6 +9,7 @@ const { TabPane } = Tabs;
 function callback(key) {
   console.log(key);
 }
+
 class Introduccion extends React.Component {
   state = {
     loading: false,
@@ -84,12 +85,15 @@ class Introduccion extends React.Component {
                   / "Requisito para aplicar a una beca" / "Mi jefe me lo pidio"
                 </p>
               </Modal>
-              <Tabs onChange={callback} type="card">
+              <Tabs
+                tabPosition="right"
+                size="small"
+                onChange={callback}
+                type="line">
                 <TabPane
                   style={{
                     margin: "20px",
                     maxWidth: "700px",
-                    minWidth: "270px",
                   }}
                   tab="Diagnóstico"
                   key="1">
@@ -111,7 +115,7 @@ class Introduccion extends React.Component {
                   style={{
                     margin: "20px",
                     maxWidth: "700px",
-                    minWidth: "270px",
+                    minWidth: "200px",
                   }}
                   tab="Listening"
                   key="2">
@@ -158,7 +162,7 @@ class Introduccion extends React.Component {
                   style={{
                     margin: "20px",
                     maxWidth: "700px",
-                    minWidth: "270px",
+                    minWidth: "200px",
                   }}
                   tab="Reading"
                   key="3">
@@ -211,7 +215,7 @@ class Introduccion extends React.Component {
                   style={{
                     margin: "20px",
                     maxWidth: "700px",
-                    minWidth: "270px",
+                    minWidth: "200px",
                   }}
                   tab="Speaking"
                   key="4">
@@ -257,7 +261,7 @@ class Introduccion extends React.Component {
                   style={{
                     margin: "20px",
                     maxWidth: "700px",
-                    minWidth: "270px",
+                    minWidth: "200px",
                   }}
                   tab="Writing"
                   key="5">

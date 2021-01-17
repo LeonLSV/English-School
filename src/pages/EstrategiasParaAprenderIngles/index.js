@@ -1,6 +1,7 @@
 import React from "react";
 import { Row } from "antd";
 import introduccion from "../../images/introduccion.png";
+import aprendizaje from "../../images/aprendizaje.png";
 import { Cards } from "../../components/Cards";
 import { LinkClass } from "../../components/Cards/styled";
 
@@ -26,7 +27,7 @@ export const EstrategiasParaAprenderIngles = () => {
             style={tarjeta}
             title="Plan de aprendizaje 🙋"
             description="Haz tu plan de aprendizaje y dedicale tiempo para aprender rapidamente."
-            image={introduccion}
+            image={aprendizaje}
           />
         </LinkClass>
       </Row>
