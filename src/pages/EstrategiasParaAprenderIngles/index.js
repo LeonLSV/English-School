@@ -16,8 +16,16 @@ export const EstrategiasParaAprenderIngles = () => {
         <LinkClass to="/Introduccion">
           <Cards
             style={tarjeta}
-            title="Introduccion"
-            description="Encuentra una motivación para aprender inglés."
+            title="Introduccion 😍"
+            description="Bienvenido! Te quiero dar algunos tips y herramientas para que tengas donde y cómo practicar inglés."
+            image={introduccion}
+          />
+        </LinkClass>
+        <LinkClass to="/plan-aprendizaje">
+          <Cards
+            style={tarjeta}
+            title="Plan de aprendizaje 🙋"
+            description="Haz tu plan de aprendizaje y dedicale tiempo para aprender rapidamente."
             image={introduccion}
           />
         </LinkClass>

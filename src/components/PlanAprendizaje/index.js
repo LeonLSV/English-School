@@ -3,13 +3,13 @@ import { Row, Col, Modal, Button, Tabs } from "antd";
 import { ContainerLesson } from "../../styles/container";
 import { LinkClass } from "../Cards/styled";
 
-import { H3, H1Title, ButtonVolver } from "./styled";
+import { H3, H1Title, ButtonVolver } from "../Introduccion/styled";
 const { TabPane } = Tabs;
 
 function callback(key) {
   console.log(key);
 }
-class Introduccion extends React.Component {
+class PlanAprendizaje extends React.Component {
   state = {
     loading: false,
     visible: false,
@@ -47,7 +47,7 @@ class Introduccion extends React.Component {
                 alignItems: "center",
                 flexDirection: "column",
               }}>
-              <H1Title>Introducción</H1Title>
+              <H1Title>Plan de Aprendizaje</H1Title>
 
               <H3>Haz clic en los botones 🙊</H3>
               <Button
@@ -316,4 +316,4 @@ class Introduccion extends React.Component {
     );
   }
 }
-export default Introduccion;
+export default PlanAprendizaje;
