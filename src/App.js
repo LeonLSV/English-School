@@ -7,7 +7,7 @@ import { EstrategiasParaAprenderIngles } from "./pages/EstrategiasParaAprenderIn
 import { InglesParaPrincipiantes } from "./pages/InglesParaPrincipiantes";
 import { TheAlphabet } from "./components/TheAlphabet";
 import { HowDoYouSpellThat } from "./components/HowDoYouSpellThat";
-import Motivacion from "./components/Motivacion";
+import Introduccion from "./components/Introduccion";
 import { Intro } from "./components/Intro";
 
 export const App = () => {
@@ -44,7 +44,7 @@ export const App = () => {
               />
               <TheAlphabet exact path="the-alphabet" />
               <HowDoYouSpellThat exact path="/how-do-you-spell-that" />
-              <Motivacion exact path="/motivation" />
+              <Introduccion exact path="/Introduccion" />
             </Router>
           </Col>
         </Row>

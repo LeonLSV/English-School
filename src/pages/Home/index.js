@@ -1,5 +1,6 @@
 import React from "react";
 import { Row, Col } from "antd";
+import { Titulo } from "./styled";
 
 export const Home = () => {
   return (
@@ -13,7 +14,7 @@ export const Home = () => {
             justifyContent: "center",
             alignItems: "center",
           }}>
-          <h1>Welcome to my English School</h1>
+          <Titulo>Welcome to my English School</Titulo>
         </Col>
       </Row>
     </>

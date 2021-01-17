@@ -1,6 +1,6 @@
 import React from "react";
 import { Row } from "antd";
-import classone from "../../images/classone.png";
+import introduccion from "../../images/introduccion.png";
 import { Cards } from "../../components/Cards";
 import { LinkClass } from "../../components/Cards/styled";
 
@@ -13,12 +13,12 @@ export const EstrategiasParaAprenderIngles = () => {
   return (
     <>
       <Row justify="center">
-        <LinkClass to="/motivation">
+        <LinkClass to="/Introduccion">
           <Cards
             style={tarjeta}
-            title="Motivación"
+            title="Introduccion"
             description="Encuentra una motivación para aprender inglés."
-            image={classone}
+            image={introduccion}
           />
         </LinkClass>
       </Row>
