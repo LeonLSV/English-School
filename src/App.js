@@ -10,6 +10,8 @@ import { HowDoYouSpellThat } from "./components/HowDoYouSpellThat";
 import Introduccion from "./components/Introduccion";
 import { Intro } from "./components/Intro";
 import PlanAprendizaje from "./components/PlanAprendizaje";
+import Greetings from "./components/Greetings";
+import { Numbers } from "./components/Numbers";
 
 export const App = () => {
   return (
@@ -43,10 +45,12 @@ export const App = () => {
                 exact
                 path="/ingles-para-principiantes"
               />
-              <TheAlphabet exact path="the-alphabet" />
-              <HowDoYouSpellThat exact path="/how-do-you-spell-that" />
               <Introduccion exact path="/Introduccion" />
               <PlanAprendizaje exact path="/plan-aprendizaje" />
+              <TheAlphabet exact path="the-alphabet" />
+              <HowDoYouSpellThat exact path="/how-do-you-spell-that" />
+              <Greetings exact path="/greetings" />
+              <Numbers exact path="/numbers" />
             </Router>
           </Col>
         </Row>

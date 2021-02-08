@@ -13,6 +13,6 @@ export const Link = styled(LinkRouter)`
 
   &[aria-current] {
     color: #1670c2;
-    ${fadeIn({ time: "0.5s" })};
+    ${fadeIn({ time: "2s" })};
   }
 `;

@@ -3,7 +3,7 @@ import { Row } from "antd";
 import introduccion from "../../images/introduccion.png";
 import aprendizaje from "../../images/aprendizaje.png";
 import { Cards } from "../../components/Cards";
-import { LinkClass } from "../../components/Cards/styled";
+import { LinkClass } from "../../styles/global";
 
 const tarjeta = {
   width: 240,

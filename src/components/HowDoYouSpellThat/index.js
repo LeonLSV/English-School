@@ -1,7 +1,7 @@
 import React from "react";
 import { ContainerLesson } from "../../styles/container";
-
-import { Collapse } from "antd";
+import { ButtonVolver, LinkClass } from "../../styles/global";
+import { Collapse, Col, Row } from "antd";
 
 const { Panel } = Collapse;
 
@@ -40,6 +40,13 @@ export const HowDoYouSpellThat = () => {
             <p>See you later.</p>
           </Panel>
         </Collapse>
+        <Row justify="center">
+          <Col>
+            <LinkClass to="/ingles-para-principiantes">
+              <ButtonVolver>Volver</ButtonVolver>
+            </LinkClass>
+          </Col>
+        </Row>
       </ContainerLesson>
     </>
   );

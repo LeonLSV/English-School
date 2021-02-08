@@ -3,5 +3,5 @@ import { fadeIn } from "./animation";
 
 export const ContainerLesson = styled.div`
   margin: 20px;
-  ${fadeIn({ time: "0.5s" })};
+  ${fadeIn({ time: "1s" })};
 `;

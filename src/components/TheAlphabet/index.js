@@ -1,7 +1,7 @@
 import React from "react";
 import { ContainerLesson } from "../../styles/container";
-
-import { Collapse } from "antd";
+import { ButtonVolver, LinkClass } from "../../styles/global";
+import { Collapse, Row, Col } from "antd";
 const { Panel } = Collapse;
 
 export const TheAlphabet = () => {
@@ -14,6 +14,12 @@ export const TheAlphabet = () => {
           defaultActiveKey={["0"]}>
           <Panel header="Let's see some examples." key="0">
             <p>A de Aguacate</p>
+            <a
+              href="https://www.languageguide.org/english/alphabet/"
+              target="__blank"
+              rel="noreferer">
+              Practice here:
+            </a>
           </Panel>
           <Panel header="A (ei)" key="1">
             <p>A is for Avocado (Aguacate)</p>
@@ -101,6 +107,13 @@ export const TheAlphabet = () => {
             <p>En esta clase, aprendiste el alfabeto.</p>
           </Panel>
         </Collapse>
+        <Row justify="center">
+          <Col>
+            <LinkClass to="/ingles-para-principiantes">
+              <ButtonVolver>Volver</ButtonVolver>
+            </LinkClass>
+          </Col>
+        </Row>
       </ContainerLesson>
     </>
   );

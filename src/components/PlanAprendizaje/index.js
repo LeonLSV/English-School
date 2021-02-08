@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect, useRef } from "react";
 import { Table, Input, Button, Popconfirm, Form, Row, Col } from "antd";
-import { LinkClass } from "../Cards/styled";
-import { H1Title, ButtonVolver } from "../Introduccion/styled";
+import { ButtonVolver, LinkClass } from "../../styles/global";
+import { H1Title } from "../Introduccion/styled";
 import { ContainerLesson } from "../../styles/container";
 
 const EditableContext = React.createContext(null);

@@ -1,9 +1,9 @@
 import React from "react";
 import { Row, Col, Modal, Button, Tabs } from "antd";
 import { ContainerLesson } from "../../styles/container";
-import { LinkClass } from "../Cards/styled";
+import { ButtonVolver, LinkClass } from "../../styles/global";
+import { H3, H1Title } from "./styled";
 
-import { H3, H1Title, ButtonVolver } from "./styled";
 const { TabPane } = Tabs;
 
 function callback(key) {
@@ -153,6 +153,16 @@ class Introduccion extends React.Component {
                       target="_blank"
                       rel="noopener noreferrer">
                       Música
+                    </a>{" "}
+                    en inglés.
+                  </p>
+                  <p>
+                    Practica:{" "}
+                    <a
+                      href="https://www.englishspanishlink.com/en/english-pronunciation/exercises/abc-listen2.htm"
+                      target="_blank"
+                      rel="noopener noreferrer">
+                      escuchando
                     </a>{" "}
                     en inglés.
                   </p>
