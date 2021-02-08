@@ -2,13 +2,14 @@ import React from "react";
 import { ContainerLesson } from "../../styles/container";
 import { ButtonVolver, LinkClass } from "../../styles/global";
 
-import { Collapse, Col, Row } from "antd";
+import { Collapse, Col, Row, BackTop } from "antd";
 const { Panel } = Collapse;
 
 export const Numbers = () => {
   return (
     <>
       <ContainerLesson>
+        <BackTop />
         <Collapse
           style={{ margin: "20px" }}
           bordered={false}
@@ -136,7 +137,7 @@ export const Numbers = () => {
             <h4>There are eight books</h4>
             <p>Ahí hay ocho libros</p>
           </Panel>
-          <Panel header="Now you know the numbers from one to thirty." key="32">
+          <Panel header="Now you know the numbers from one to thirty." key="33">
             <h4>Ahora conoces los números del 1 al 30.</h4>
           </Panel>
         </Collapse>

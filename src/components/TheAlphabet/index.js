@@ -1,12 +1,13 @@
 import React from "react";
 import { ContainerLesson } from "../../styles/container";
 import { ButtonVolver, LinkClass } from "../../styles/global";
-import { Collapse, Row, Col } from "antd";
+import { Collapse, Row, Col, BackTop } from "antd";
 const { Panel } = Collapse;
 
 export const TheAlphabet = () => {
   return (
     <>
+      <BackTop />
       <ContainerLesson>
         <Collapse
           style={{ margin: "20px" }}

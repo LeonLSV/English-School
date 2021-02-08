@@ -1,5 +1,5 @@
 import React from "react";
-import { Table, Row, Col } from "antd";
+import { Table, Row, Col, BackTop } from "antd";
 import { Title, ButtonVolver, LinkClass } from "../../styles/global";
 import { ContainerLesson } from "../../styles/container";
 
@@ -23,7 +23,19 @@ const columns2 = [
   { title: "Age", dataIndex: "age", key: "age" },
   { title: "Country", dataIndex: "address", key: "address" },
 ];
+const columns3 = [
+  {
+    title: "Questions",
+    dataIndex: "questions",
+    render: (text) => <p>{text}</p>,
+  },
+  {
+    title: "Answers",
 
+    dataIndex: "answers",
+    align: "right",
+  },
+];
 const data = [
   {
     key: "1",
@@ -90,10 +102,48 @@ const data2 = [
       "My name is Joe Black, I am 32 years old, living in Sidney No. 1 Lake Park.",
   },
 ];
+const data3 = [
+  {
+    key: "1",
+    questions:
+      "--How are you? --How have you been? --How are you doing? --How's it going?",
+
+    answers:
+      "--Fantastic --Very well, thank you. And You? --Great, thanks --Good --Fine, thanks --Pretty good --Not bad --Ok",
+  },
+  {
+    key: "2",
+    questions:
+      "--¿Cómo estás? --¿Cómo has estado? --¿Cómo te va? --¿Qué tal va todo?",
+
+    answers:
+      "--Fantástico --Muy bien, gracias. ¿Y usted? --Genial, gracias. --Bien --Bien, gracias. --Bastante bien --Nada mal --Ok",
+  },
+  {
+    key: "3",
+    questions:
+      "--What's up? --What's happening? --What's going on? --What have you been up to?",
+    answers: "--Not much --Nothing much --Not a lot",
+  },
+  {
+    key: "4",
+    questions:
+      "--¿Qué pasa? --¿Qué ocurre? --¿Qué está pasando? --¿Qué has estado haciendo?",
+    answers: "--No mucho --No mucho --No mucho",
+  },
+  {
+    key: "5",
+    questions:
+      "--It was a pleasure seeing/meeting you --It was nice seeing/meeting you --Goodbye/Bye/Bye-bye --Good night --Take care --Have a nice day/evening --Have a good one --see you later/soon --Later --So long",
+    answers:
+      "Ha sido un placer verte/conocerte --Fue un placer verte/conocerte --Cuídate --Que tenga un buen día/tarde --Que te vaya bien --Hasta luego",
+  },
+];
 
 const Greetings = () => {
   return (
     <>
+      <BackTop />
       <ContainerLesson>
         <Row>
           <Col
@@ -105,7 +155,7 @@ const Greetings = () => {
               alignItems: "center",
               margin: "20px 0",
             }}>
-            <Table columns={columns} dataSource={data} />
+            <Table pagination={false} columns={columns} dataSource={data} />
           </Col>
         </Row>
         <Row>
@@ -124,6 +174,7 @@ const Greetings = () => {
             </Title>
             <Title>En esta clase aprenderás cómo presentarte.</Title>
             <Table
+              pagination={false}
               columns={columns2}
               expandable={{
                 expandedRowRender: (record) => (
@@ -132,6 +183,27 @@ const Greetings = () => {
                 rowExpandable: (record) => record.name !== "Not Expandable",
               }}
               dataSource={data2}
+            />
+          </Col>
+        </Row>
+        <Row>
+          <Col
+            span={24}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              margin: "20px 0",
+            }}>
+            <Title>Examples</Title>
+            <Table
+              style={{ width: "300px", textAling: "center" }}
+              columns={columns3}
+              dataSource={data3}
+              bordered
+              pagination={false}
+              title={() => "How are you?"}
             />
             <LinkClass to="/ingles-para-principiantes">
               <ButtonVolver>Volver</ButtonVolver>
