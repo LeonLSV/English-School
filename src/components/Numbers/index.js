@@ -23,6 +23,13 @@ export const Numbers = () => {
               rel="noreferer noopener">
               Practice:
             </a>
+            <br />
+            <a
+              href="https://agendaweb.org/exercises/vocabulary/numbers/numbers-teen-ty"
+              target="__blank"
+              rel="noreferer noopener">
+              And here:
+            </a>
           </Panel>
           <Panel header="one (uan)" key="1">
             <p>1</p>
@@ -113,6 +120,24 @@ export const Numbers = () => {
           </Panel>
           <Panel header="thirty (zerdi)" key="30">
             <p>30</p>
+          </Panel>
+          <Panel header="Complete the sentence 1" key="31">
+            <p>Completa la oración</p>
+            <h4>How many (meny) DOGS are there</h4>
+            <p>¿Cuántos perros hay ahí?</p>
+            <p>(Foto con 3 perros)</p>
+            <h4>There are three dogs</h4>
+            <p>Ahí hay tres perros</p>
+          </Panel>
+          <Panel header="Complete the sentence 2" key="32">
+            <h4>How many BOOKS are there</h4>
+            <p>¿Cuántos libros hay ahí?</p>
+            <p>(Foto con 8 libros)</p>
+            <h4>There are eight books</h4>
+            <p>Ahí hay ocho libros</p>
+          </Panel>
+          <Panel header="Now you know the numbers from one to thirty." key="32">
+            <h4>Ahora conoces los números del 1 al 30.</h4>
           </Panel>
         </Collapse>
         <Row justify="center">
