@@ -12,7 +12,7 @@ const columns = [
   },
 
   {
-    title: "Farewalss /ferwels/",
+    title: "Farewells /ferwels/",
     dataIndex: "address",
     key: "address",
   },

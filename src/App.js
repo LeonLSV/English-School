@@ -12,6 +12,8 @@ import { Intro } from "./components/Intro";
 import PlanAprendizaje from "./components/PlanAprendizaje";
 import Greetings from "./components/Greetings";
 import { Numbers } from "./components/Numbers";
+import { Jobs } from "./components/Jobs";
+import ToBe from "./components/ToBe";
 
 export const App = () => {
   return (
@@ -51,6 +53,8 @@ export const App = () => {
               <HowDoYouSpellThat exact path="/how-do-you-spell-that" />
               <Greetings exact path="/greetings" />
               <Numbers exact path="/numbers" />
+              <Jobs exact path="/jobs" />
+              <ToBe exact path="/tobe" />
             </Router>
           </Col>
         </Row>
