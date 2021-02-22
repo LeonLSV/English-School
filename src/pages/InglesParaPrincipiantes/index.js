@@ -10,6 +10,7 @@ import jobs from "../../images/jobs.png";
 import Tobe from "../../images/tobe.png";
 import pronombres from "../../images/pronombres.png";
 import reloj from "../../images/reloj.png";
+import dias from "../../images/dias.png";
 
 const tarjeta = {
   width: 240,
@@ -82,6 +83,14 @@ export const InglesParaPrincipiantes = () => {
             title="What time is it?"
             description="Pidiendo y respondiendo sobre la hora."
             image={reloj}
+          />
+        </LinkClass>
+        <LinkClass to="/days-of-the-week">
+          <Cards
+            style={tarjeta}
+            title="Days of the week"
+            description="Aprenderemos los días de la semana y preprosiciones de tiempo."
+            image={dias}
           />
         </LinkClass>
       </Row>

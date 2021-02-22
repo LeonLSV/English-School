@@ -1,7 +1,7 @@
 import React from "react";
 import { ContainerLesson } from "../../styles/container";
-import { Table, Row, Col, Space, BackTop } from "antd";
 import { ButtonVolver, LinkClass } from "../../styles/global";
+import { Table, Row, Col, Space, BackTop } from "antd";
 
 const columns = [
   {
