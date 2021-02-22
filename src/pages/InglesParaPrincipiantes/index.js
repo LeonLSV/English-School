@@ -9,6 +9,7 @@ import numbers from "../../images/numbers.png";
 import jobs from "../../images/jobs.png";
 import Tobe from "../../images/tobe.png";
 import pronombres from "../../images/pronombres.png";
+import reloj from "../../images/reloj.png";
 
 const tarjeta = {
   width: 240,
@@ -73,6 +74,14 @@ export const InglesParaPrincipiantes = () => {
             title="Personal Pronouns"
             description="Presente Simple - Pronombres"
             image={pronombres}
+          />
+        </LinkClass>
+        <LinkClass to="/what-time-is-it">
+          <Cards
+            style={tarjeta}
+            title="What time is it?"
+            description="Pidiendo y respondiendo sobre la hora."
+            image={reloj}
           />
         </LinkClass>
       </Row>

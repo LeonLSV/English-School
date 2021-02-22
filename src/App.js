@@ -17,6 +17,7 @@ import { Numbers } from "./components/Numbers";
 import { Jobs } from "./components/Jobs";
 import ToBe from "./components/ToBe";
 import Pronouns from "./components/Pronouns";
+import WhatTime from "./components/WhatTime";
 import { ClassFour } from "./components/Notes/ClassFour";
 
 export const App = () => {
@@ -67,6 +68,8 @@ export const App = () => {
               <Jobs exact path="/jobs" />
               <ToBe exact path="/tobe" />
               <Pronouns exact path="/pronouns" />
+              <WhatTime exact path="/what-time-is-it" />
+              {/* Apuntes de las clases en vivo */}
               <ClassFour exact path="/class-four" />
             </Router>
           </Col>
