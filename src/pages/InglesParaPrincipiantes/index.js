@@ -8,6 +8,7 @@ import greeting from "../../images/greetings.png";
 import numbers from "../../images/numbers.png";
 import jobs from "../../images/jobs.png";
 import Tobe from "../../images/tobe.png";
+import pronombres from "../../images/pronombres.png";
 
 const tarjeta = {
   width: 240,
@@ -64,6 +65,14 @@ export const InglesParaPrincipiantes = () => {
             title="Verb To Be"
             description="Verb To Be in present. Affirmative, Negative, Interrogative."
             image={Tobe}
+          />
+        </LinkClass>
+        <LinkClass to="/pronouns">
+          <Cards
+            style={tarjeta}
+            title="Personal Pronouns"
+            description="Presente Simple - Pronombres"
+            image={pronombres}
           />
         </LinkClass>
       </Row>

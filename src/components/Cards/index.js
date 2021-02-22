@@ -13,7 +13,7 @@ export const Cards = (props) => {
       <Card
         hoverable
         style={tarjeta}
-        cover={<img alt="ClassOne" src={props.image} />}>
+        cover={<img alt={props.title} src={props.image} />}>
         <Meta title={props.title} description={props.description} />
       </Card>
     </>

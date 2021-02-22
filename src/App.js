@@ -5,6 +5,8 @@ import { Home } from "./pages/Home";
 import MenuClass from "./components/ClassList";
 import { EstrategiasParaAprenderIngles } from "./pages/EstrategiasParaAprenderIngles";
 import { InglesParaPrincipiantes } from "./pages/InglesParaPrincipiantes";
+import { Tallerdeinglesparaprincipiantes } from "./pages/Tallerdeinglesparaprincipiantes";
+import { Apuntesdeclases } from "./pages/Apuntesdeclases";
 import { TheAlphabet } from "./components/TheAlphabet";
 import { HowDoYouSpellThat } from "./components/HowDoYouSpellThat";
 import Introduccion from "./components/Introduccion";
@@ -14,6 +16,8 @@ import Greetings from "./components/Greetings";
 import { Numbers } from "./components/Numbers";
 import { Jobs } from "./components/Jobs";
 import ToBe from "./components/ToBe";
+import Pronouns from "./components/Pronouns";
+import { ClassFour } from "./components/Notes/ClassFour";
 
 export const App = () => {
   return (
@@ -38,6 +42,7 @@ export const App = () => {
         <Row justify="center" align="middle">
           <Col span={24} style={{ display: "flex", justifyContent: "center" }}>
             <Router>
+              {/* PAGES */}
               <Intro exact path="/" />
               <EstrategiasParaAprenderIngles
                 exact
@@ -47,6 +52,12 @@ export const App = () => {
                 exact
                 path="/ingles-para-principiantes"
               />
+              <Tallerdeinglesparaprincipiantes
+                exact
+                path="/taller-de-ingles-para-principiantes"
+              />
+              <Apuntesdeclases exact path="/apuntes-de-clases" />
+              {/* COMPONENTSSSS */}
               <Introduccion exact path="/Introduccion" />
               <PlanAprendizaje exact path="/plan-aprendizaje" />
               <TheAlphabet exact path="the-alphabet" />
@@ -55,6 +66,8 @@ export const App = () => {
               <Numbers exact path="/numbers" />
               <Jobs exact path="/jobs" />
               <ToBe exact path="/tobe" />
+              <Pronouns exact path="/pronouns" />
+              <ClassFour exact path="/class-four" />
             </Router>
           </Col>
         </Row>

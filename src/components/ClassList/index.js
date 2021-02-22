@@ -43,6 +43,14 @@ class MenuClass extends React.Component {
               Inglés para principiantes
             </Link>
           </Menu.Item>
+          <Menu.Item key="setting:3">
+            <Link to="/taller-de-ingles-para-principiantes">
+              Taller de Inglés para principiantes
+            </Link>
+          </Menu.Item>
+          <Menu.Item key="setting:4">
+            <Link to="/apuntes-de-clases">Apuntes de clases</Link>
+          </Menu.Item>
         </SubMenu>
         <Menu.Item key="alipay">
           <a
