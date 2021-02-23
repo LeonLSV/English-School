@@ -1,11 +1,45 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ContainerLesson } from "../../styles/container";
 import { ButtonVolver, LinkClass } from "../../styles/global";
-
 import { Collapse, Col, Row, BackTop } from "antd";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+import { gsap, TimelineLite, Power3 } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 const { Panel } = Collapse;
 
 export const Numbers = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
+  // let tl = new TimelineLite({ delay: 0.3 });
+
+  useEffect(() => {
+    // tl.staggerFrom(
+    //   ".animacion1",
+    //   1,
+    //   { y: 15, opacity: 0, ease: Power3.easeOut },
+    //   0.15,
+    //   "Start"
+    // );
+    gsap.from(".content-main", {
+      duration: 3,
+      y: "100",
+      opacity: 0,
+      ease: "ease-in",
+      scrollTrigger: {
+        trigger: ".content-main",
+        start: "top 100%",
+        end: "top center",
+        scrub: "true",
+        markers: "true",
+      },
+    });
+  });
   return (
     <>
       <ContainerLesson>
@@ -17,7 +51,17 @@ export const Numbers = () => {
           <Panel
             header="In this lesson you will learn the numbers 1 to 30. "
             key="0">
-            <p>En esta clase aprenderás los números del 1 al 30.</p>
+            <p
+              data-aos="fade-up"
+              data-aos-offset="50"
+              data-aos-delay="5000"
+              data-aos-duration="5000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center">
+              En esta clase aprenderás los números del 1 al 30.
+            </p>
             <a
               href="https://www.languageguide.org/english/numbers/"
               target="__blank"
@@ -35,6 +79,9 @@ export const Numbers = () => {
           <Panel header="one (uan)" key="1">
             <p>1</p>
           </Panel>
+          {/* <div className="animacion1">Clase</div>
+          <div className="animacion1">Clase</div> */}
+
           <Panel header="two (chu)" key="2">
             <p>2</p>
           </Panel>
@@ -65,6 +112,11 @@ export const Numbers = () => {
           <Panel header="eleven (eleven)" key="11">
             <p>11</p>
           </Panel>
+          <div className="content">
+            <div className="content-main">
+              Hoasldalsjs dflksdf sdflsjkdf sdfsldkfas dfasd fms
+            </div>
+          </div>
           <Panel header="Twelve (ctuelf)" key="12">
             <p>12</p>
           </Panel>

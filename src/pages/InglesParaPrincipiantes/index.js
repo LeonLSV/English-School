@@ -102,6 +102,14 @@ export const InglesParaPrincipiantes = () => {
             image={places}
           />
         </LinkClass>
+        <LinkClass to="/hobbies">
+          <Cards
+            style={tarjeta}
+            title="What do you like to do?"
+            description="Hobbies"
+            image={places}
+          />
+        </LinkClass>
       </Row>
     </>
   );

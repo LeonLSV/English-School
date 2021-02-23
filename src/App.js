@@ -21,6 +21,7 @@ import Pronouns from "./components/Pronouns";
 import WhatTime from "./components/WhatTime";
 import Daysoftheweek from "./components/Daysoftheweek";
 import Places from "./components/Places";
+import Hobbies from "./components/Hobbies";
 import { ClassFour } from "./components/Notes/ClassFour";
 
 export const App = () => {
@@ -74,6 +75,7 @@ export const App = () => {
               <WhatTime exact path="/what-time-is-it" />
               <Daysoftheweek exact path="/days-of-the-week" />
               <Places exact path="/places" />
+              <Hobbies exact path="/hobbies" />
               {/* Apuntes de las clases en vivo */}
               <ClassFour exact path="/class-four" />
             </Router>

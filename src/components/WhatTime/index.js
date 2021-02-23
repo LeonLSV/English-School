@@ -15,6 +15,7 @@ const alineacion = {
   display: "flex",
   alignItems: "center",
   flexDirection: "column",
+  textAlign: "center",
 };
 
 const WhatTime = () => {
@@ -23,7 +24,7 @@ const WhatTime = () => {
       <ContainerLesson>
         <BackTop />
         <Title>What time is it?</Title>
-        <Row>
+        <Row justify="center">
           <Col lg={12} md={24} style={alineacion}>
             <Title>Look at the clock.</Title>
             <img src={lahora} alt="La hora" />
@@ -42,7 +43,7 @@ const WhatTime = () => {
             <h3>You can also say It's nine fourteen at night.</h3>
           </Col>
         </Row>
-        <Row>
+        <Row justify="center">
           <Col lg={12} md={24} style={alineacion}>
             <Title>Look at the clock.</Title>
             <img src={reloj3} alt="La hora" />
@@ -58,7 +59,7 @@ const WhatTime = () => {
             <h3>It's four thirty in the morning.</h3>
           </Col>
         </Row>
-        <Row>
+        <Row justify="center">
           <Col lg={12} md={24} style={alineacion}>
             <Title>Look at the clock.</Title>
             <img src={reloj5} alt="La hora" />

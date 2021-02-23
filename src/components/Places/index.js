@@ -77,7 +77,7 @@ const Places = () => {
         </Row>
         <Row
           ref={sectionRef}
-          className="fadeIn"
+          // className="fadeIn"
           style={{ margin: "20px" }}
           justify="center">
           <Col lg={12} md={24} style={alineacion}>
