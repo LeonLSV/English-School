@@ -5,7 +5,7 @@ import { Collapse, Col, Row, BackTop } from "antd";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-import { gsap, TimelineLite, Power3 } from "gsap";
+import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 

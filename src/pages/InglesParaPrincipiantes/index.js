@@ -12,6 +12,8 @@ import pronombres from "../../images/pronombres.png";
 import reloj from "../../images/reloj.png";
 import dias from "../../images/dias.png";
 import places from "../../images/places.png";
+import hobbies from "../../images/hobbies.png";
+import dislike from "../../images/dislike.png";
 
 const tarjeta = {
   width: 240,
@@ -107,7 +109,15 @@ export const InglesParaPrincipiantes = () => {
             style={tarjeta}
             title="What do you like to do?"
             description="Hobbies"
-            image={places}
+            image={hobbies}
+          />
+        </LinkClass>
+        <LinkClass to="/likes">
+          <Cards
+            style={tarjeta}
+            title="Likes VS Dislikes"
+            description="Hablaremos sobre gustos y disgustos."
+            image={dislike}
           />
         </LinkClass>
       </Row>
