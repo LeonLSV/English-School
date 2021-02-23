@@ -22,14 +22,46 @@ const Likes = () => {
               actividades que nos gusta hacer.
             </p>
           </Col>
-          <Row justify="center" style={{ width: "100%", padding: "60px 0" }}>
-            <Col lg={8} md={12} sm={24}>
+          <Row
+            justify="center"
+            style={{
+              width: "100%",
+              padding: "60px 0",
+            }}>
+            <Col
+              lg={8}
+              md={12}
+              sm={24}
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+              }}>
               <img style={{ width: "90%" }} src={ilikedis} alt="i like" />
             </Col>
-            <Col lg={8} md={12} sm={24}>
+            <Col
+              lg={8}
+              md={12}
+              sm={24}
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+              }}>
               <img style={{ width: "90%" }} src={ilikedis1} alt="i like" />
             </Col>
-            <Col lg={8} md={12} sm={24}>
+            <Col
+              lg={8}
+              md={12}
+              sm={24}
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+              }}>
               <img style={{ width: "90%" }} src={ilikedis2} alt="i like" />
             </Col>
           </Row>
