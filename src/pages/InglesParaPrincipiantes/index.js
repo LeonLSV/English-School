@@ -11,6 +11,7 @@ import Tobe from "../../images/tobe.png";
 import pronombres from "../../images/pronombres.png";
 import reloj from "../../images/reloj.png";
 import dias from "../../images/dias.png";
+import places from "../../images/places.png";
 
 const tarjeta = {
   width: 240,
@@ -91,6 +92,14 @@ export const InglesParaPrincipiantes = () => {
             title="Days of the week"
             description="Aprenderemos los días de la semana y preprosiciones de tiempo."
             image={dias}
+          />
+        </LinkClass>
+        <LinkClass to="/places">
+          <Cards
+            style={tarjeta}
+            title="Places in the city"
+            description="Aprenderemos sobre algunos lugares y sobre sus PREPOSICIONES"
+            image={places}
           />
         </LinkClass>
       </Row>

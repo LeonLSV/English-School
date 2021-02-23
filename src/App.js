@@ -1,6 +1,7 @@
 import React from "react";
 import { Router } from "@reach/router";
 import { Row, Col } from "antd";
+
 import { Home } from "./pages/Home";
 import MenuClass from "./components/ClassList";
 import { EstrategiasParaAprenderIngles } from "./pages/EstrategiasParaAprenderIngles";
@@ -19,6 +20,7 @@ import ToBe from "./components/ToBe";
 import Pronouns from "./components/Pronouns";
 import WhatTime from "./components/WhatTime";
 import Daysoftheweek from "./components/Daysoftheweek";
+import Places from "./components/Places";
 import { ClassFour } from "./components/Notes/ClassFour";
 
 export const App = () => {
@@ -71,6 +73,7 @@ export const App = () => {
               <Pronouns exact path="/pronouns" />
               <WhatTime exact path="/what-time-is-it" />
               <Daysoftheweek exact path="/days-of-the-week" />
+              <Places exact path="/places" />
               {/* Apuntes de las clases en vivo */}
               <ClassFour exact path="/class-four" />
             </Router>
