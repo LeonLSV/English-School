@@ -23,6 +23,7 @@ import Daysoftheweek from "./components/Daysoftheweek";
 import Places from "./components/Places";
 import Hobbies from "./components/Hobbies";
 import Likes from "./components/Likes";
+import AdverbsOfFrequency from "./components/AdverbsOfFrequency";
 import { ClassFour } from "./components/Notes/ClassFour";
 
 export const App = () => {
@@ -78,6 +79,7 @@ export const App = () => {
               <Places exact path="/places" />
               <Hobbies exact path="/hobbies" />
               <Likes exact path="/likes" />
+              <AdverbsOfFrequency exact path="/adverbs" />
               {/* Apuntes de las clases en vivo */}
               <ClassFour exact path="/class-four" />
             </Router>

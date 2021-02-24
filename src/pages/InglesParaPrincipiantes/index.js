@@ -14,6 +14,7 @@ import dias from "../../images/dias.png";
 import places from "../../images/places.png";
 import hobbies from "../../images/hobbies.png";
 import dislike from "../../images/dislike.png";
+import frequency from "../../images/frequency.png";
 
 const tarjeta = {
   width: 240,
@@ -118,6 +119,14 @@ export const InglesParaPrincipiantes = () => {
             title="Likes VS Dislikes"
             description="Hablaremos sobre gustos y disgustos."
             image={dislike}
+          />
+        </LinkClass>
+        <LinkClass to="/adverbs">
+          <Cards
+            style={tarjeta}
+            title="Adverbs of frequency"
+            description="Hablaremos sobre los ADVERBIOS DE FRECUENCIA."
+            image={frequency}
           />
         </LinkClass>
       </Row>
