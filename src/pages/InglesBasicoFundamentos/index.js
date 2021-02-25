@@ -21,6 +21,14 @@ export const InglesBasicoFundamentos = () => {
             image={greetings}
           />
         </LinkClass>
+        <LinkClass to="/useful-expressions">
+          <Cards
+            style={tarjeta}
+            title="Useful Expressions"
+            description="Expresiones útiles cuando aprendes ingles."
+            image={greetings}
+          />
+        </LinkClass>
       </Row>
     </>
   );

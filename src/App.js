@@ -27,6 +27,7 @@ import Hobbies from "./components/Hobbies";
 import Likes from "./components/Likes";
 import AdverbsOfFrequency from "./components/AdverbsOfFrequency";
 import GreetingsAndIntroducing from "./components/GreetingsAndIntroducing";
+import UsefulExpressions from "./components/UsefulExpressions";
 
 import { ClassFour } from "./components/Notes/ClassFour";
 
@@ -92,6 +93,7 @@ export const App = () => {
                 exact
                 path="/greetings-and-introducing"
               />
+              <UsefulExpressions exact path="/useful-expressions" />
               {/* Apuntes de las clases en vivo */}
               <ClassFour exact path="/class-four" />
             </Router>
