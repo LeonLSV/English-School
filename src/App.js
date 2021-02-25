@@ -8,6 +8,8 @@ import { EstrategiasParaAprenderIngles } from "./pages/EstrategiasParaAprenderIn
 import { InglesParaPrincipiantes } from "./pages/InglesParaPrincipiantes";
 import { Tallerdeinglesparaprincipiantes } from "./pages/Tallerdeinglesparaprincipiantes";
 import { Apuntesdeclases } from "./pages/Apuntesdeclases";
+import { InglesBasicoFundamentos } from "./pages/InglesBasicoFundamentos";
+
 import { TheAlphabet } from "./components/TheAlphabet";
 import { HowDoYouSpellThat } from "./components/HowDoYouSpellThat";
 import Introduccion from "./components/Introduccion";
@@ -24,6 +26,8 @@ import Places from "./components/Places";
 import Hobbies from "./components/Hobbies";
 import Likes from "./components/Likes";
 import AdverbsOfFrequency from "./components/AdverbsOfFrequency";
+import GreetingsAndIntroducing from "./components/GreetingsAndIntroducing";
+
 import { ClassFour } from "./components/Notes/ClassFour";
 
 export const App = () => {
@@ -63,6 +67,10 @@ export const App = () => {
                 exact
                 path="/taller-de-ingles-para-principiantes"
               />
+              <InglesBasicoFundamentos
+                exact
+                path="/ingles-basico-fundamentos"
+              />
               <Apuntesdeclases exact path="/apuntes-de-clases" />
               {/* COMPONENTSSSS */}
               <Introduccion exact path="/Introduccion" />
@@ -80,6 +88,10 @@ export const App = () => {
               <Hobbies exact path="/hobbies" />
               <Likes exact path="/likes" />
               <AdverbsOfFrequency exact path="/adverbs" />
+              <GreetingsAndIntroducing
+                exact
+                path="/greetings-and-introducing"
+              />
               {/* Apuntes de las clases en vivo */}
               <ClassFour exact path="/class-four" />
             </Router>
