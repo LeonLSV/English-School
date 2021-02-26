@@ -54,6 +54,14 @@ class MenuClass extends React.Component {
             </Link>
           </Menu.Item>
           <Menu.Item key="setting:5">
+            <Link to="/ingles-basico-gramatica">Inglés Básico: Gramática</Link>
+          </Menu.Item>
+          <Menu.Item key="setting:6">
+            <Link to="/ingles-basico-descripciones">
+              Inglés Básico: Descripciones y Comparativos
+            </Link>
+          </Menu.Item>
+          <Menu.Item key="setting:7">
             <Link to="/apuntes-de-clases">Apuntes de clases</Link>
           </Menu.Item>
         </SubMenu>

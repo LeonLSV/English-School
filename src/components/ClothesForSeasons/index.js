@@ -8,7 +8,7 @@ import numberss from "../../images/numbers1-100.gif";
 
 const { Panel } = Collapse;
 
-export const Numbers100 = () => {
+export const ClothesForSeasons = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
@@ -24,17 +24,7 @@ export const Numbers100 = () => {
           <Panel
             header="Now we're going to practice numbers from 30 to 100."
             key="0">
-            <p
-              data-aos="fade-up"
-              data-aos-offset="50"
-              data-aos-delay="5000"
-              data-aos-duration="5000"
-              data-aos-easing="ease-in-out"
-              data-aos-mirror="true"
-              data-aos-once="true"
-              data-aos-anchor-placement="top-center">
-              Ahora vamos a practicar los números del 30 al 100.
-            </p>
+            <p>Ahora vamos a practicar los números del 30 al 100.</p>
           </Panel>
           <Panel header="Thirty (zery)" key="1">
             <p>30</p>
@@ -66,11 +56,23 @@ export const Numbers100 = () => {
             lg={20}
             md={24}
             style={{ display: "flex", justifyContent: "center" }}>
-            <img style={{ width: "90%" }} src={numberss} alt="numbers" />
+            <img
+              data-aos="fade-up"
+              data-aos-offset="0"
+              data-aos-delay="0"
+              // data-aos-duration="3000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+              style={{ width: "90%" }}
+              src={numberss}
+              alt="numbers"
+            />
           </Col>
         </Row>
         <Row justify="center" style={{ paddingTop: "60px" }}>
-          <LinkClass to="/ingles-basico-fundamentos">
+          <LinkClass to="/ingles-basico-gramatica">
             <ButtonVolver>Volver</ButtonVolver>
           </LinkClass>
         </Row>

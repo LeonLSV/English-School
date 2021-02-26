@@ -8,6 +8,7 @@ import reloj2 from "../../images/reloj2.png";
 import reloj3 from "../../images/reloj3.png";
 import reloj4 from "../../images/reloj4.png";
 import reloj5 from "../../images/reloj5.png";
+import tellingtime from "../../images/telling-time.jpg";
 
 const alineacion = {
   maxWidth: "100%",
@@ -68,7 +69,34 @@ const WhatTime = () => {
             <h3>It's three twelve in the afternoon.</h3>
           </Col>
         </Row>
-        <Row justify="center">
+        <Row justify="center" style={{ textAlign: "center" }}>
+          <Col lg={12} md={24}>
+            <img style={{ width: "90%" }} src={tellingtime} alt="tellingtime" />
+            <h2 style={{ paddingTop: "40px" }}>
+              We use AT + TIME when giving the time of a specific event.
+            </h2>
+            <p>
+              Usamos AT + TIME cuando damos la hora de un evento específico.
+            </p>
+            <h3>The class starts at nine o'clock</h3>
+            <p>La clase empieza a las nueve</p>
+            <h3>The flight leaves at ten to three</h3>
+            <p>El vuelo sale a las tres menos diez</p>
+            <h2 style={{ paddingTop: "40px" }}>
+              We use It IS or It's to answer a question that asks for the time
+              right now.
+            </h2>
+            <p>
+              Usamos It IS o It's para responder a una pregunta que pide el
+              tiempo en este momento.
+            </p>
+            <h3>What time is it? It is half past four</h3>
+            <p>¿Qué hora es? Son las cuatro y media</p>
+            <h3>What's the time? It's twenty to five</h3>
+            <p>¿Qué hora es? Son las cinco menos veinte</p>
+          </Col>
+        </Row>
+        <Row justify="center" style={{ paddingTop: "60px" }}>
           <LinkClass to="/ingles-para-principiantes">
             <ButtonVolver>Volver</ButtonVolver>
           </LinkClass>

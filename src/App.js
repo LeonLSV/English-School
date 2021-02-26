@@ -9,6 +9,8 @@ import { InglesParaPrincipiantes } from "./pages/InglesParaPrincipiantes";
 import { Tallerdeinglesparaprincipiantes } from "./pages/Tallerdeinglesparaprincipiantes";
 import { Apuntesdeclases } from "./pages/Apuntesdeclases";
 import { InglesBasicoFundamentos } from "./pages/InglesBasicoFundamentos";
+import { InglesBasicoGramatica } from "./pages/InglesBasicoGramatica";
+import { InglesBasicoDescripciones } from "./pages/InglesBasicoDescripciones";
 
 import { TheAlphabet } from "./components/TheAlphabet";
 import { HowDoYouSpellThat } from "./components/HowDoYouSpellThat";
@@ -31,6 +33,7 @@ import UsefulExpressions from "./components/UsefulExpressions";
 import UserfulExpressions2 from "./components/UserfulExpressions2";
 import VocabularyJobs from "./components/VocabularyJobs";
 import { Numbers100 } from "./components/Numbers100";
+import { ClothesForSeasons } from "./components/ClothesForSeasons";
 
 import { ClassFour } from "./components/Notes/ClassFour";
 
@@ -75,6 +78,11 @@ export const App = () => {
                 exact
                 path="/ingles-basico-fundamentos"
               />
+              <InglesBasicoGramatica exact path="/ingles-basico-gramatica" />
+              <InglesBasicoDescripciones
+                exact
+                path="/ingles-basico-descripciones"
+              />
               <Apuntesdeclases exact path="/apuntes-de-clases" />
               {/* COMPONENTSSSS */}
               <Introduccion exact path="/Introduccion" />
@@ -100,6 +108,7 @@ export const App = () => {
               <VocabularyJobs exact path="/vocabulary-jobs" />
               <UserfulExpressions2 exact path="/useful-expressions-meeting" />
               <Numbers100 exact path="/numbers100" />
+              <ClothesForSeasons exact path="/clothes" />
               {/* Apuntes de las clases en vivo */}
               <ClassFour exact path="/class-four" />
             </Router>
