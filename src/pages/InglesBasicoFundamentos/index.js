@@ -6,6 +6,7 @@ import { LinkClass } from "../../styles/global";
 import greetings from "../../images/greetings.png";
 import userful from "../../images/USERFUL.png";
 import jobs from "../../images/jobs.png";
+import numbers from "../../images/numbers.png";
 
 const tarjeta = {
   width: 240,
@@ -46,6 +47,14 @@ export const InglesBasicoFundamentos = () => {
             title="Useful Expressions 2"
             description="Meeting and Greeting - Expresiones útiles cuando aprendes ingles."
             image={userful}
+          />
+        </LinkClass>
+        <LinkClass to="/numbers100">
+          <Cards
+            style={tarjeta}
+            title="Numbers 30/100"
+            description="Los numeros del 30 al 100"
+            image={numbers}
           />
         </LinkClass>
       </Row>
