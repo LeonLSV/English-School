@@ -2,7 +2,7 @@ import React from "react";
 import { ContainerLesson } from "../../styles/container";
 import { ButtonVolver, LinkClass } from "../../styles/global";
 import { Table, Row, Col, Space, BackTop } from "antd";
-
+import verbtobe2 from "../../images/verbtobe2.png";
 const columns = [
   {
     title: "Affirmative",
@@ -191,6 +191,22 @@ const ToBe = () => {
                   dataSource={data2}
                   size="small"
                   pagination={false}
+                />
+              </Row>
+              <Row
+                justify="center"
+                style={{
+                  width: "100%",
+                  display: "flex",
+                  justifyContent: "center",
+                  flexDirection: "column",
+                  textAlign: "center",
+                  alignItems: "center",
+                }}>
+                <img
+                  style={{ width: "90%" }}
+                  src={verbtobe2}
+                  alt="verb-to-be"
                 />
               </Row>
               <LinkClass to="/ingles-para-principiantes">
