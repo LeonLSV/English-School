@@ -17,8 +17,8 @@ export const InglesBasicoGramatica = () => {
         <LinkClass to="/clothes">
           <Cards
             style={tarjeta}
-            title="Gramatica"
-            description="Saludar y presentarte."
+            title="Clothes for seasons"
+            description="Ropa para temporadas."
             image={greetings}
           />
         </LinkClass>
