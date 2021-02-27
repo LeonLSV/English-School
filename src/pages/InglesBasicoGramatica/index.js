@@ -3,7 +3,8 @@ import { Row } from "antd";
 import { Cards } from "../../components/Cards";
 import { LinkClass } from "../../styles/global";
 
-import greetings from "../../images/greetings.png";
+import clothes from "../../images/clothes.png";
+import cant from "../../images/cant.png";
 
 const tarjeta = {
   width: 240,
@@ -18,8 +19,24 @@ export const InglesBasicoGramatica = () => {
           <Cards
             style={tarjeta}
             title="Clothes for seasons"
-            description="Ropa para temporadas."
-            image={greetings}
+            description="Vocabulary: Ropa para temporadas."
+            image={clothes}
+          />
+        </LinkClass>
+        <LinkClass to="/can">
+          <Cards
+            style={tarjeta}
+            title="Can and can't"
+            description="Grammar: In this lesson you will learn to use can and can’t to talk about abilities and possibilities."
+            image={cant}
+          />
+        </LinkClass>
+        <LinkClass to="/abilities">
+          <Cards
+            style={tarjeta}
+            title="Abilities"
+            description="Vocabulary: Look at the texts and find examples of sentences with can and can't."
+            image={clothes}
           />
         </LinkClass>
       </Row>

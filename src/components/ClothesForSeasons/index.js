@@ -9,6 +9,7 @@ import winter from "../../images/winter.png";
 import spring from "../../images/spring.png";
 import summer from "../../images/summer.png";
 import fall from "../../images/fall.png";
+import conversation from "../../images/conversation.png";
 
 export const ClothesForSeasons = () => {
   useEffect(() => {
@@ -158,6 +159,15 @@ export const ClothesForSeasons = () => {
             <p>Bufanda</p>
             <h3>Sweater / suerer</h3>
             <p>Suéter</p>
+          </Col>
+        </Row>
+        <Row justify="center" style={{ paddingTop: "60px" }}>
+          <Col span={16}>
+            <img src={conversation} alt="conversation" />
+            <h3>What season does Camila like?</h3>
+            <h3>What season does Ricardo like?</h3>
+            <h3>What clothing can you wear in winter?</h3>
+            <h3>What clothing can you wear in summer?</h3>
           </Col>
         </Row>
 

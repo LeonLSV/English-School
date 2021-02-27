@@ -34,6 +34,7 @@ import UserfulExpressions2 from "./components/UserfulExpressions2";
 import VocabularyJobs from "./components/VocabularyJobs";
 import { Numbers100 } from "./components/Numbers100";
 import { ClothesForSeasons } from "./components/ClothesForSeasons";
+import { Can } from "./components/Can";
 
 import { ClassFour } from "./components/Notes/ClassFour";
 
@@ -109,6 +110,7 @@ export const App = () => {
               <UserfulExpressions2 exact path="/useful-expressions-meeting" />
               <Numbers100 exact path="/numbers100" />
               <ClothesForSeasons exact path="/clothes" />
+              <Can exact path="/can" />
               {/* Apuntes de las clases en vivo */}
               <ClassFour exact path="/class-four" />
             </Router>
