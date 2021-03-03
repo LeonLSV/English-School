@@ -6,6 +6,7 @@ import { LinkClass } from "../../styles/global";
 import clothes from "../../images/clothes.png";
 import cant from "../../images/cant.png";
 import abilitiespost from "../../images/abilitiespost.png";
+import USERFUL from "../../images/USERFUL.png";
 
 const tarjeta = {
   width: 240,
@@ -46,6 +47,22 @@ export const InglesBasicoGramatica = () => {
             title="Verb Patrons"
             description="Vocabulary: Patrones verbales."
             image={abilitiespost}
+          />
+        </LinkClass>
+        <LinkClass to="/useful-expressions3">
+          <Cards
+            style={tarjeta}
+            title="Useful expressions LIKES"
+            description="Vocabulary: Expresiones para decir que algo te gusta o no te gusta."
+            image={USERFUL}
+          />
+        </LinkClass>
+        <LinkClass to="/grammar-present-simple">
+          <Cards
+            style={tarjeta}
+            title="Present simple"
+            description="Grammar: Presente simple"
+            image={USERFUL}
           />
         </LinkClass>
       </Row>

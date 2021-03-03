@@ -37,6 +37,8 @@ import { ClothesForSeasons } from "./components/ClothesForSeasons";
 import { Can } from "./components/Can";
 import { Abilities } from "./components/Abilities";
 import { VerbPatrons } from "./components/VerbPatrons";
+import { UsefulExpressions3 } from "./components/UsefulExpressions3";
+import { PresentSimple } from "./components/PresentSimple";
 
 import { ClassFour } from "./components/Notes/ClassFour";
 
@@ -114,7 +116,9 @@ export const App = () => {
               <ClothesForSeasons exact path="/clothes" />
               <Can exact path="/can" />
               <Abilities exact path="/abilities" />
-              <VerbPatrons exact path="//verb-patterns" />
+              <VerbPatrons exact path="/verb-patterns" />
+              <UsefulExpressions3 exact path="/useful-expressions3" />
+              <PresentSimple exact path="/grammar-present-simple" />
               {/* Apuntes de las clases en vivo */}
               <ClassFour exact path="/class-four" />
             </Router>

@@ -98,7 +98,7 @@ export const VerbPatrons = () => {
         <BackTop />
 
         <Row justify="center">
-          <Col lg={20} md={24}>
+          <Col lg={20} md={24} style={{ textAlign: "center" }}>
             <h2>
               Con "want" usamos el infinitivo, la preposición "to" y el verbo en
               la forma base.
