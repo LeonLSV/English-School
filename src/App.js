@@ -35,6 +35,8 @@ import VocabularyJobs from "./components/VocabularyJobs";
 import { Numbers100 } from "./components/Numbers100";
 import { ClothesForSeasons } from "./components/ClothesForSeasons";
 import { Can } from "./components/Can";
+import { Abilities } from "./components/Abilities";
+import { VerbPatrons } from "./components/VerbPatrons";
 
 import { ClassFour } from "./components/Notes/ClassFour";
 
@@ -111,6 +113,8 @@ export const App = () => {
               <Numbers100 exact path="/numbers100" />
               <ClothesForSeasons exact path="/clothes" />
               <Can exact path="/can" />
+              <Abilities exact path="/abilities" />
+              <VerbPatrons exact path="//verb-patterns" />
               {/* Apuntes de las clases en vivo */}
               <ClassFour exact path="/class-four" />
             </Router>
