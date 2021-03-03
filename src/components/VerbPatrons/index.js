@@ -66,7 +66,7 @@ const data = [
     frase: "She doesn't dislike cleaning the house.",
     description: "No le disgusta limpiar la casa.",
   },
-  // aslkamsd
+  // as
   {
     key: 12,
     frase: "Does she dislike cleaning the house?",
