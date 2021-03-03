@@ -50,6 +50,33 @@ export const PresentSimple = () => {
           <p>Él no tiene una computadora portatil</p>
           <h2>Does he have a laptop?</h2>
           <p>¿Él tiene una computadora portatil?</p>
+          <h2>She has a phone</h2>
+          <p>Ella tiene un telefono</p>
+          <h2>She doesn't have a phone</h2>
+          <p>Ella no tiene un telefono</p>
+          <h2>Does she have a phone?</h2>
+          <p>Ella tiene una telefono?</p>
+          <h2>It has wheels</h2>
+          <p>Eso tiene ruedas</p>
+          <h2>It doesn't have wheels</h2>
+          <p>Eso no tiene ruedas</p>
+          <h2>Does it have wheels?</h2>
+          <h1 style={{ paddingTop: "60px" }}>
+            We They (van con DO DON'T y HAVE)
+          </h1>
+          <h3>Notese que el sustantivo lleva la S al final.</h3>
+          <h2>We have bikes</h2>
+          <p>Nosotros tenemos bicicletas</p>
+          <h2>We don't have bikes</h2>
+          <p>Nosotros no tenemos bicicletas</p>
+          <h2>Do we have bikes?</h2>
+          <p>Nosotros tenemos bicicletas?</p>
+          <h2>They have pets</h2>
+          <p>Ellos tienen mascotas</p>
+          <h2>They don't have pets</h2>
+          <p>Ellos no tienen mascotas</p>
+          <h2>Do they have pets?</h2>
+          <p>Ellos tienen mascotas?</p>
         </Row>
         <Row justify="center" style={{ paddingTop: "60px" }}>
           <LinkClass to="/ingles-basico-gramatica">
