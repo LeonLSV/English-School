@@ -39,6 +39,10 @@ import { Abilities } from "./components/Abilities";
 import { VerbPatrons } from "./components/VerbPatrons";
 import { UsefulExpressions3 } from "./components/UsefulExpressions3";
 import { PresentSimple } from "./components/PresentSimple";
+import { Rutines } from "./components/Rutines";
+import { Questions } from "./components/Questions";
+import { UsefulExpressions4 } from "./components/UsefulExpressions4";
+import { Adjectives } from "./components/Adjectives";
 
 import { ClassFour } from "./components/Notes/ClassFour";
 
@@ -119,6 +123,10 @@ export const App = () => {
               <VerbPatrons exact path="/verb-patterns" />
               <UsefulExpressions3 exact path="/useful-expressions3" />
               <PresentSimple exact path="/grammar-present-simple" />
+              <Rutines exact path="/rutines" />
+              <Questions exact path="/questions" />
+              <UsefulExpressions4 exact path="/useful-expressions4" />
+              <Adjectives exact path="/adjectives1" />
               {/* Apuntes de las clases en vivo */}
               <ClassFour exact path="/class-four" />
             </Router>

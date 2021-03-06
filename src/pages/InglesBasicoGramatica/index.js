@@ -7,6 +7,10 @@ import clothes from "../../images/clothes.png";
 import cant from "../../images/cant.png";
 import abilitiespost from "../../images/abilitiespost.png";
 import USERFUL from "../../images/USERFUL.png";
+import RUTINES from "../../images/RUTINES.png";
+import presentsimple from "../../images/presentsimple.png";
+import verbpatrons from "../../images/verbpatrons.png";
+import pregunta from "../../images/pregunta.png";
 
 const tarjeta = {
   width: 240,
@@ -46,7 +50,7 @@ export const InglesBasicoGramatica = () => {
             style={tarjeta}
             title="Verb Patrons"
             description="Vocabulary: Patrones verbales."
-            image={abilitiespost}
+            image={verbpatrons}
           />
         </LinkClass>
         <LinkClass to="/useful-expressions3">
@@ -62,6 +66,38 @@ export const InglesBasicoGramatica = () => {
             style={tarjeta}
             title="Present simple"
             description="Grammar: Presente simple"
+            image={presentsimple}
+          />
+        </LinkClass>
+        <LinkClass to="/rutines">
+          <Cards
+            style={tarjeta}
+            title="Rutines"
+            description="Wake up - Get up - Take a shower"
+            image={RUTINES}
+          />
+        </LinkClass>
+        <LinkClass to="/questions">
+          <Cards
+            style={tarjeta}
+            title="WH Questions"
+            description="Preguntas: Vocabulario. Who What When Where Why How"
+            image={pregunta}
+          />
+        </LinkClass>
+        <LinkClass to="/useful-expressions4">
+          <Cards
+            style={tarjeta}
+            title="Useful expressions"
+            description="Adverbios de frecuencia. Siempre, a veces, nunca..."
+            image={USERFUL}
+          />
+        </LinkClass>
+        <LinkClass to="/adjectives1">
+          <Cards
+            style={tarjeta}
+            title="Vocabulary: Adjectives"
+            description="Adjectivos."
             image={USERFUL}
           />
         </LinkClass>
