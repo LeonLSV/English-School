@@ -43,6 +43,7 @@ import { Rutines } from "./components/Rutines";
 import { Questions } from "./components/Questions";
 import { UsefulExpressions4 } from "./components/UsefulExpressions4";
 import { Adjectives } from "./components/Adjectives";
+import { ThePast } from "./components/ThePast";
 
 import { ClassFour } from "./components/Notes/ClassFour";
 
@@ -127,6 +128,7 @@ export const App = () => {
               <Questions exact path="/questions" />
               <UsefulExpressions4 exact path="/useful-expressions4" />
               <Adjectives exact path="/adjectives1" />
+              <ThePast exact path="/the-past" />
               {/* Apuntes de las clases en vivo */}
               <ClassFour exact path="/class-four" />
             </Router>

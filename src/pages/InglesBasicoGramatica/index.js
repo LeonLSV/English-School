@@ -11,6 +11,8 @@ import RUTINES from "../../images/RUTINES.png";
 import presentsimple from "../../images/presentsimple.png";
 import verbpatrons from "../../images/verbpatrons.png";
 import pregunta from "../../images/pregunta.png";
+import adjectivespost from "../../images/adjectivespost.png";
+import thepast from "../../images/thepast.png";
 
 const tarjeta = {
   width: 240,
@@ -98,7 +100,15 @@ export const InglesBasicoGramatica = () => {
             style={tarjeta}
             title="Vocabulary: Adjectives"
             description="Adjectivos."
-            image={USERFUL}
+            image={adjectivespost}
+          />
+        </LinkClass>
+        <LinkClass to="/the-past">
+          <Cards
+            style={tarjeta}
+            title="The past - Grammar"
+            description="El pasado / WAS - WERE"
+            image={thepast}
           />
         </LinkClass>
       </Row>
