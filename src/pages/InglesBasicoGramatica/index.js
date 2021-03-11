@@ -111,6 +111,30 @@ export const InglesBasicoGramatica = () => {
             image={thepast}
           />
         </LinkClass>
+        <LinkClass to="/useful-expressions-past">
+          <Cards
+            style={tarjeta}
+            title="Useful expressions"
+            description="The past / Time expressions"
+            image={thepast}
+          />
+        </LinkClass>
+        <LinkClass to="/past-events">
+          <Cards
+            style={tarjeta}
+            title="Past Events"
+            description="Eventos pasados Did Didn't + pronunciación PLAY/PLAYED"
+            image={thepast}
+          />
+        </LinkClass>
+        <LinkClass to="/simple-past-irregular">
+          <Cards
+            style={tarjeta}
+            title="Simple Past"
+            description="Grammar: Verbs irregular"
+            image={thepast}
+          />
+        </LinkClass>
       </Row>
     </>
   );
