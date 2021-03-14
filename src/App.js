@@ -47,6 +47,8 @@ import { ThePast } from "./components/ThePast";
 import { UsefulExpressionsPast } from "./components/UsefulExpressionsPast";
 import { PastEvents } from "./components/PastEvents";
 import { SimplePastIrregular } from "./components/SimplePastIrregular";
+import { Future } from "./components/Future";
+import { UsefulExpressionsFuture } from "./components/UsefulExpressionsFuture";
 
 import { ClassFour } from "./components/Notes/ClassFour";
 
@@ -135,6 +137,11 @@ export const App = () => {
               <UsefulExpressionsPast exact path="/useful-expressions-past" />
               <PastEvents exact path="/past-events" />
               <SimplePastIrregular exact path="/simple-past-irregular" />
+              <Future exact path="/future" />
+              <UsefulExpressionsFuture
+                exact
+                path="/useful-expressions-future"
+              />
               {/* Apuntes de las clases en vivo */}
               <ClassFour exact path="/class-four" />
             </Router>

@@ -13,6 +13,7 @@ import verbpatrons from "../../images/verbpatrons.png";
 import pregunta from "../../images/pregunta.png";
 import adjectivespost from "../../images/adjectivespost.png";
 import thepast from "../../images/thepast.png";
+import thefuture from "../../images/thefuture.png";
 
 const tarjeta = {
   width: 240,
@@ -67,7 +68,7 @@ export const InglesBasicoGramatica = () => {
           <Cards
             style={tarjeta}
             title="Present simple"
-            description="Grammar: Presente simple"
+            description="Grammar: Presente simple."
             image={presentsimple}
           />
         </LinkClass>
@@ -75,7 +76,7 @@ export const InglesBasicoGramatica = () => {
           <Cards
             style={tarjeta}
             title="Rutines"
-            description="Wake up - Get up - Take a shower"
+            description="Wake up - Get up - Take a shower."
             image={RUTINES}
           />
         </LinkClass>
@@ -83,7 +84,7 @@ export const InglesBasicoGramatica = () => {
           <Cards
             style={tarjeta}
             title="WH Questions"
-            description="Preguntas: Vocabulario. Who What When Where Why How"
+            description="Preguntas: Vocabulario. Who What When Where Why How."
             image={pregunta}
           />
         </LinkClass>
@@ -107,7 +108,7 @@ export const InglesBasicoGramatica = () => {
           <Cards
             style={tarjeta}
             title="The past - Grammar"
-            description="El pasado / WAS - WERE"
+            description="El pasado / WAS - WERE."
             image={thepast}
           />
         </LinkClass>
@@ -115,7 +116,7 @@ export const InglesBasicoGramatica = () => {
           <Cards
             style={tarjeta}
             title="Useful expressions"
-            description="The past / Time expressions"
+            description="The past / Time expressions."
             image={thepast}
           />
         </LinkClass>
@@ -123,7 +124,7 @@ export const InglesBasicoGramatica = () => {
           <Cards
             style={tarjeta}
             title="Past Events"
-            description="Eventos pasados Did Didn't + pronunciación PLAY/PLAYED"
+            description="Eventos pasados Did Didn't + pronunciación PLAY/PLAYED."
             image={thepast}
           />
         </LinkClass>
@@ -131,8 +132,24 @@ export const InglesBasicoGramatica = () => {
           <Cards
             style={tarjeta}
             title="Simple Past"
-            description="Grammar: Verbs irregular"
+            description="Grammar: Verbs irregular."
             image={thepast}
+          />
+        </LinkClass>
+        <LinkClass to="/future">
+          <Cards
+            style={tarjeta}
+            title="Plans for the future"
+            description="Grammar: Planes para el futuro."
+            image={thefuture}
+          />
+        </LinkClass>
+        <LinkClass to="/useful-expressions-future">
+          <Cards
+            style={tarjeta}
+            title="Useful Expressions"
+            description="Plans for the future."
+            image={thefuture}
           />
         </LinkClass>
       </Row>
