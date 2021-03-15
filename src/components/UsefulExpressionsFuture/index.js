@@ -3,8 +3,8 @@ import { Row, BackTop, Col } from "antd";
 import { ContainerLesson } from "../../styles/container";
 import { ButtonVolver, LinkClass } from "../../styles/global";
 
-import future1 from "../../images/future1.png";
-import future2 from "../../images/future2.png";
+// import future1 from "../../images/future1.png";
+// import future2 from "../../images/future2.png";
 
 export const UsefulExpressionsFuture = () => {
   return (
